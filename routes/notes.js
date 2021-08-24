@@ -34,7 +34,6 @@ notes.delete('/notes/:note_id', (req, res) => {
     console.info(`${req.method} request to delete a note`);
     console.log(req.params);
     readAndDelete(req.params.note_id, './db/db.json');
-    location.reload();
 });
 
 
