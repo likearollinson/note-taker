@@ -31,6 +31,7 @@ const readAndAppend = (content, file) => {
     });
 };
 
+// helper to read and parse a json file then delete a specific note based on id
 const readAndDelete = (content, file) => {
     fs.readFile(file, 'utf8', (err, data) => {
         if (err) {

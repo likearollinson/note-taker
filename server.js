@@ -1,9 +1,12 @@
+// load modules
 const express = require('express');
 const path = require('path');
 const api = require('./routes/notes.js')
 
+// set port for heroku and localhost
 const PORT = process.env.PORT || 3001;
 
+// set express to variable for use
 const app = express();
 
 app.use(express.json());

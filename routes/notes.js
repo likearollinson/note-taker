@@ -30,6 +30,7 @@ notes.post('/notes', (req, res) => {
     }
 });
 
+// delete route for deleting notes
 notes.delete('/notes/:note_id', (req, res) => {
     console.info(`${req.method} request to delete a note`);
     console.log(req.params);
